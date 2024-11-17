@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EduVerve</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <style>
+    .content {
+      padding: 20px;
+    }
+  </style>
+  <script>
+    function showContent(contentId) {
+      var sections = document.getElementsByClassName("content-section");
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+      }
+      document.getElementById(contentId).style.display = "block";
+    }
+  </script>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Programming with EduVerve</h3>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showContent('content1')">Variable Declaration</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showContent('content2')">Control Structure</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showContent('content3')">Data Structure</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showContent('content4')">OOP programming</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showContent('content5')">Debugging</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+  <div class="w3-container w3-teal">
+    <h1>Some Programming Concepts</h1>
+  </div>
+
+  <div class="content">
+    <!-- Content for Page 1 -->
+    <div id="content1" class="content-section" style="display:none">
+      <h1>Fundamental Coding Concepts (With Tips to Improve)</h1>
+      <h2>1. Variable Declaration</h2>
+      <hr>
+      <p>Variables are containers for storing values. You can declare variables using variable names.</p>
+      <ul>
+        <li><b>Number:</b> Stores numerical values.</li>
+        <li><b>String:</b> Stores a set of characters.</li>
+        <li><b>List:</b> Stores multiple items in a single variable.</li>
+        <li><b>Tuple:</b> Stores multiple items in an ordered, unchangeable format.</li>
+        <li><b>Dictionary:</b> Stores key-value pairs accessible via a key.</li>
+      </ul>
+      <div>
+        <h3>Watch More:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hCTXGGInH8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Content for Page 2 -->
+    <div id="content2" class="content-section" style="display:none">
+      <h2>2. Control Structures</h2>
+      <h4>A control structure specifies the flow of control in a program. There are three basic types:</h4>
+      <ul>
+        <li><b>Sequential Logic:</b> Code runs in a specific order.</li>
+        <li><b>Selection Logic:</b> A condition determines whether a block of code runs.</li>
+        <li><b>Iteration Logic:</b> A block of code repeats a specific number of times.</li>
+      </ul>
+      <div>
+        <h3>Watch More:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VdqE9IXoS9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Content for Page 3 -->
+    <div id="content3" class="content-section" style="display:none">
+      <h2>3. Data Structures</h2>
+      <h4>A data structure provides an effective way to store and retrieve data. There are various data structures that computer programmers can use to complete tasks and run applications. These are some commonly used data structures:</h4>
+      <ul>
+        <li><b>Arrays:</b> Organize data by storing similar elements together.</li>
+        <li><b>Stacks:</b> Linear structures following a last-in, first-out (LIFO) order.</li>
+        <li><b>Queues:</b> Linear structures following a first-in, first-out (FIFO) order.</li>
+        <li><b>Linked Lists:</b> Use pointers to link elements instead of contiguous memory locations.</li>
+        <li><b>Binary Trees:</b> Non-linear structures containing nodes with two possible values.</li>
+        <li><b>Graphs:</b> Contain nodes and edges connected to one another.</li>
+        <li><b>Hash-tables:</b> Store key-value pairs for efficient data retrieval.</li>
+      </ul>
+      <div>
+        <h3>Watch More:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cOSTc6qBRQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Content for Page 4 -->
+    <div id="content4" class="content-section" style="display:none">
+      <h2>4. Object-oriented Programming</h2>
+      <h4>Object-oriented programming is based on the concept of objects and classes where an object may contain data in the form of attributes and methods. Classes are user-defined blueprints or prototypes from which you can create objects.</h4>
+      <div>
+        <h3>Watch More:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pTB0EiLXUC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Content for Page 5 -->
+    <div id="content5" class="content-section" style="display:none">
+      <h2>5. Debugging</h2>
+      <h4>Debugging is the process of removing errors from computer programs. The process allows software development and engineering teams to ensure that the software works as intended.</h4>
+      <div>
+        <h3>Watch More:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uS9eWXcuYOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  showContent('content1');
+</script>
+
+</body>
+</html>
